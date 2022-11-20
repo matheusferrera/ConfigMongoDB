@@ -8,8 +8,9 @@ app.use(express.json())
 app.use(cors())
 
 
-//1º passo -> Ir na conexão no mongo DB (connect > connect your app) colar o link em db/mongo.db.js
-//2º passo -> Rodar no terminal nodemon index.js
+//1º passo -> [db/mongo.db.js] -> Ir na conexão no mongo DB (connect > connect your app) colar o link em 
+//2º passo -> [respositores/produtos] -> Trocar o db("nomeDB").collenction("nomeColection")
+//2º passo -> [index.js] -> Rodar no terminal nodemon index.js
 
 //Caso precise colocar mais alguma rota
 app.use("/produto", routerProduto)
