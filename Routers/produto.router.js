@@ -6,7 +6,7 @@ app.use(express.json())
 
 app.post("/", produtoController.createProduto)
 app.put("/", produtoController.updateProduto)
-app.get("/", produtoController.getProduto)
+app.get("/:filter", produtoController.getProduto)
 
 
 export default app
