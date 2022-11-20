@@ -25,7 +25,7 @@ async function updateProduto(req,res) {
 
 async function getProduto(req,res) {
     try {
-        let insertData = req.body
+        let insertData = req.params.filter
         const data = await produtoService.getProduto(insertData)
         res.send(data)
 
