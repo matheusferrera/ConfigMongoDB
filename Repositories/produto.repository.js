@@ -29,6 +29,7 @@ async function getProduto(params) {
     const client = getClient()
     try {
         await client.connect()
+        //VERIFICAR SE PARAMS ESTÁ RETORNANDO STRING!
         return await client.db("boiCerto").collection("boi").findOne({idProduto: params.idProduto})
     } catch (err) {
         throw err
